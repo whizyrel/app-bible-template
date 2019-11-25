@@ -1,8 +1,69 @@
 @font-face {
   font-family: "Varela Round"!important;
-  src: url("../assets/fonts/varela/varela_round-regular.ttf");
+  src: url("../fonts/varela/varela_round-regular.ttf") format("truetype");
 }
 
 :root {
+  --cover-height: 25%;
+  --scripture-toolbar-height: 60px;
+  --light-grey: #eeebebf6;
+  --dark-grey: grey;
+  --dark-red: #260403;
+  --light-red: #4c0503;
+  --light-red-1x: #bf0803;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: var(--dark-grey)!important;
+}
+
+
+.__app-cover {
+  height: var(--cover-height);
+  background-clip: border-box;
+  background-image: url("../imgs/cover-img.png");
+  background-size: cover;
+}
+
+.__app-scripture-toolbar {
+  height: var(--scripture-toolbar-height);
+  background-color: var(--white);
+  opacity: .9;
+  position: sticky;
+  top: 0;
+  transition: all 1s ease-in;
+  box-shadow: 0 0 5px .5px var(--dark-red);
+}
+
+.__app-scriptures-container {
+  height: calc(100% - var(--cover-height) - var(--scripture-toolbar-height));
+  padding: 0 150px;
+  flex-direction: column;
+}
+
+.__app-scriptures-book {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* colors */
+.__grey {
+  /* background-color: var(--light-red);
+  box-shadow: 0 0 5px .5px var(--dark); */
+  background-color: var(--light-red-1x);
+  box-shadow: 0 0 3px 1px var(--dark-red);
+
+  /* transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53); */
 }
