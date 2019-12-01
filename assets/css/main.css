@@ -74,6 +74,10 @@ body {
   /* max-height: fit-content; */
 }
 
+.__app-scriptures-item span {
+  flex-direction: row;
+}
+
 .__app-scriptures-item:first-of-type,
 .__app-scriptures-item:last-of-type {
   margin-top: .4rem;
@@ -103,7 +107,7 @@ body {
   width: var(--player-width);
   height: var(--player-height);
   background-color: var(--white);
-  box-shadow: 0 0 3px 1px var(--dark-grey);
+  box-shadow: 0 0 4px 0px #adb5bd85;
   z-index: 1000;
   border-top-left-radius: var(--player-bottom-radius);
   border-top-right-radius: var(--player-bottom-radius);
