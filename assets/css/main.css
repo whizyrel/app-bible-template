@@ -48,8 +48,9 @@ body {
   opacity: .9;
   position: sticky;
   top: 0;
-  transition: all 1s ease-in;
-  box-shadow: 0 0 5px .5px var(--dark-red);
+  transition: all .5s ease-in;
+  /* box-shadow: 0 0 5px .5px var(--dark-red); */
+  box-shadow: 0 0 5px 0px #26040373;
 }
 .__app-scriptures-container,
 .__app-scriptures-player,
