@@ -39,7 +39,7 @@ body {
   background-clip: border-box;
   background-image: url("../imgs/cover-img.png");
   background-size: cover;
-  color: #adb5bd;
+  color: var(--white);
 }
 
 .__app-scripture-toolbar {
