@@ -74,8 +74,13 @@ body {
   /* max-height: fit-content; */
 }
 
-.__app-scriptures-item span {
+.__app-scriptures-item div {
   flex-direction: row;
+}
+
+.__app-scriptures-item div p {
+  width: fit-content;
+  font-size: 10px;
 }
 
 .__app-scriptures-item:first-of-type,
@@ -101,7 +106,7 @@ body {
 }
 
 .__app-scriptures-player {
-  position: fixed;
+  position: fixed;  
   right: var(--player-right);
   bottom: var(--player-bottom);
   width: var(--player-width);
