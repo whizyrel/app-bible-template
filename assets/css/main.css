@@ -57,6 +57,10 @@ body {
   overflow-x: hidden;
 }
 
+.__app--scripture__result--header {
+  font-size: 12px;
+}
+
 .__app--scripture__result--item {
   flex-direction: column;
   max-height: var(--app-scripture-result-item);
